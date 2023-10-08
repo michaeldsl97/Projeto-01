@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Young+Serif&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Young Serif', serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Estilização CABEÇALHO*/
+header.cabecalho {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    background-color: rgb(209, 207, 207);
+    align-items: center;
+}
+
+.nome-empresa {
+    display: flex;
+    top: auto;
+    left: 0;
+    font-size: 60px;
+    color: rgb(238, 133, 114);
+}
+
+.div-menu {
+    position: fixed;
+    top: auto;
+    right: 0;
+    padding: 2rem;
+}
+
+.ul-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.bi-search {
+    font-size: 40px;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.bi-geo-alt {
+    font-size: 40px;
+    padding: .5rem;
+    margin: .5rem;
+}
+}
+
+#nome-localizacao {
+    font-size: 25px;
+}
+
+.bi-person-circle {
+    font-size: 40px;
+    padding: .5rem;
+    margin: 1rem;
+}
+

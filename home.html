@@ -5,56 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <title>HOME</title>
+    <link rel="stylesheet" href="css/style-home.css">
+    <title>FlirtDogs</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-search"></i></li>
-                <li><i class="bi bi-geo-alt"></i></li>
-                <li><p>Próximos a mim</p></li>
-                <li><i class="bi bi-person-circle"></i></li>
-            </ul>
-        </nav>
+    <header class="cabecalho">
+        <h1>FlirtDogs</h1>
+        <a href="perfil.html">
+            <li><i class="bi bi-person-circle"></i></li>
+        </a>
     </header>
 
-    <main>
-        <section>
-            <p>Comece a Flertar...</p>
-        </section>
+    <nav class="opcoes">
+        <ul class="ul-opcoes">
+            <a href="procurar.html">
+                <li>
+                    <i class="bi bi-search"></i>
+                </li>
+            </a>
 
-        <section>
-            <div>
-                <ul>
-                    <li><i class="bi bi-arrow-counterclockwise"></i></li>
-                </ul>
+            <a href="">
+                <li>
+                    <i class="bi bi-geo-alt"></i>
+                </li>
+            </a>
+
+            <a href="">
+                <li>
+                    <i class="bi bi-chat-dots"></i>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <section class="dados-perfil">
+        <div class="foto">
+            <div class="detalhes">
+                <div class="detalhes-nome">
+                    <h2>Marley</h2>
+                </div>
+                <div class="detalhes-bio">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia Voluptatum, libero. ipsum dolor sit, amet consectetur adipisicing elit. Earum, necessitatibus.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reacoes">
+            <div class="reacao reacao-deslike">
+                <a href="">
+                    <i class="bi bi-x-lg"></i>
+                </a>
             </div>
 
-            <div>
-                <ul>
-                    <li><i class="bi bi-chat-dots"></i></li>
-                </ul>
+            <div class="reacao reacao-superlike">
+                <a href="">
+                    <i class="bi bi-star"></i>
+                </a>
             </div>
-        </section>
 
-        <section>
-            <img src="https://media.istockphoto.com/id/1435044278/vector/breed-pointer.jpg?s=612x612&w=0&k=20&c=ur8vYqOKKcAD58Xr_GOaXmqORO4X9kwFdY4Ng7mwQII="
-                alt="Foto de perfil">
-            <!-- Descrição do perfil, com nome, gostos e etc -->
-            <h1>Nome</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem est eligendi libero veniam ipsam
-                consequatur, dolores voluptate aliquid? Incidunt, cumque!</p>
-            <div>
-                <ul>
-                    <li><i class="bi bi-x-lg"></i></li>
-                    <li><i class="bi bi-star"></i></li>
-                    <li><i class="bi bi-heart"></i></li>
-                </ul>
+            <div class="reacao reacao-like">
+                <a href="">
+                    <i class="bi bi-heart"></i>
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
 </body>
 
 </html>
