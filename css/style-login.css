@@ -1,54 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-* {
+
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: font-family: 'Roboto', sans-serif;
-    ;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(214, 215, 216);
+    background-color:#f37676;
 }
 
-div.nome-empresa {
-    font-size: 40px;
-    display: flex;
-    color: #f37676;
-    justify-content: center;
-    margin: 5rem;
-}
-
-div.area-login {
-   background-color: rgb(230, 63, 63);
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   padding: 3rem;
-   border-radius: 10px;
-}
-
-label {
-    color: white;
-    font-size: 1.5rem;
-    margin: 1rem;
-}
-
-button {
-    position: relative;
-    margin: 2rem 0 0 0 ;
-    padding: 10px;
+form#formulario {
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.4mm solid #585858;
     border-radius: 10px;
-    background-color: rgb(70, 152, 240);
-    color: white;
-    border: none;
 }
 
-button:hover {
+#formulario h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #f37676;
+    font-family: font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+}
+
+#formulario input#email {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+#formulario input#senha {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+#formulario button#enviar {
+    color: #f8eeee;
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0 0 0;
     cursor: pointer;
-    background-color: rgb(42, 138, 241);
+    background-color: #f37676;
+    border-radius: 10px;
+    transition: 1s;
+    margin-bottom: 1rem;
+}
+
+#formulario button#enviar:hover {
+    background-color: rgb(240, 105, 105);
 }

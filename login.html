@@ -5,31 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style-login.css">
-
     <title>LOGIN</title>
 </head>
 
 <body>
-    <section>
-        <div class="nome-empresa">
-            <h1>FlirtDogs</h1>
-        </div>
 
-        <div class="area-login">
-            <label for="login">LOGIN</label>
-            <input id="login" type="email">
+    <form id="formulario" action="/teste" name="meuFormulario" method="post" >
 
-            <br>
+        <h2>FlirtDogs</h2>
 
-            <label for="senha">SENHA</label>
-            <input id="senha" type="password">
+        <input id="email" type="text" name="email" placeholder="Digite seu email...">
 
-            <br>
+        <input id="senha" type="password" name="senha" placeholder="Digite sua senha...">
 
-            <button>REALIZAR LOGIN</button>
-        </div>
-    </section>
-    
+        <button id="enviar" type="submit" onclick="logar()">LOGIN</button>
+    </form>
+
+    <scrip scr="js/login.js"></script>
 </body>
-
 </html>
