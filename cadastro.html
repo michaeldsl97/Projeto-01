@@ -9,40 +9,40 @@
 </head>
 
 <body>
-    <section class="nome-empresa">
-        <h1>FlirtDogs</h1>
-    </section>
-
     <section class="area-cadastro">
-        <form action="">
-            <div class="formulario">
-                <label for="">NOME</label>
-                <input type="text">
+
+        <div id="nome-empresa">
+            <h2 >FlirtDogs</h2>
+        </div>
+
+        <form id="formulario-cadastro" name="meuFormulario" method="post" onsubmit="return submissaoFormulario()">
+
+                <label id="nome" for="" >NOME:</label>
+                <input id="nome" type="text" name="nome">
                 <br>
 
-                <label for="">DATA DE NASCIMENTO</label>
-                <br>
-                <input type="date">
-                <br>
-
-                <label for="">SEXO</label>
-                <br>
-                <input type="radio" name="sexo">HOMEM
-                <input type="radio" name="sexo">MULHER
+                <label id="data-nascimento" for="">DATA DE NASCIMENTO:</label>
+                <input id="data-nascimento"  type="date" name="idade">
                 <br>
 
-                <label for="">E-MAIL</label>
-                <input type="email">
+                <label id="sexo" for="">SEXO:</label>
+                <input id="sexo" type="radio" name="sexo">HOMEM
+                <input id="sexo" type="radio" name="sexo">MULHER
                 <br>
 
-                <label for="">SENHA</label>
-                <input type="password">
+                <label id="email" for="">E-MAIL:</label>
+                <input id="email" type="email" name="email">
                 <br>
 
-                <button>CADASTRAR</button>
-            </div>
+                <label id="senha" for="">SENHA:</label>
+                <input id="senha" type="password" name="senha">
+                <br>
+
+                <button id="cadastrar" type="submit">CADASTRAR</button>
         </form>
     </section>
+    
+    <script src="js/cadastro.js"></script>
 
 </body>
 

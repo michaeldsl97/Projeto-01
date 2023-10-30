@@ -1,17 +1,13 @@
-// TESTANDO JS
-function logar() {
-    var email = document.getElementById('email').value;
-    var senha = document.getElementById('senha').value;
+let botaoEnviar = document.querySelector('#enviar');
 
-    if (login == "admin" && senha == "admin") {
-        alert('SUCESSO');
-    } else {
-        alert('USUARIO OU SENHA INCORRETO')
+botaoEnviar.addEventListener('click', function(){
+    let inputValor = document.querySelector('#meuInput').value;
+    if(inputValor == ''){
+        alert('Todos os campos são obrigatórios!')
+    }else{
+        alert('LOGIN REALIZADO COM SUCESSO!')
     }
-}
 
-var email = document.getElementById('email');
-
-email.addEventListener('focus',()=> {
-    email.style.borderColor = #919191;
-})
+    document.querySelector('#meuInput').value = '';
+    
+});

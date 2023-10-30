@@ -1,63 +1,167 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: font-family: 'Roboto', sans-serif;
-    ;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(214, 215, 216);
+    background-color: #f37676;
 }
 
-.nome-empresa {
-    font-size: 40px;
-    display: flex;
-    color: #f37676;
-    justify-content: center;
-    margin: 3rem;
-}
-
-.area-cadastro {
-    background-color: rgb(235, 85, 85);
+section.area-cadastro {
+    background-color: rgb(255, 255, 255);
+    max-width: 500px;
+    width: 70%;
+    padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 2rem;
+    transform: translate(-50%, -50%);
+    border: 0.4mm solid #585858;
     border-radius: 10px;
-    align-items: center;
-    border: 0.18rem solid rgb(36, 35, 35);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #797878;
 }
 
-
-label {
-    color: white;
-    font-size: 1.5rem;
+div#nome-empresa h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #f37676;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 2px black;
 }
 
-input {
+/* Estilização LABELs e INPUTs */
+
+#formulario-cadastro label#nome {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+#formulario-cadastro input#nome {
+    width: 83.2%;
+    height: 25px;
+    border: 0.5px solid #b1aeae;
+    padding-left: 10px;
+    margin: 10px 10px 0 0;
+    font-size: 18px;
     border-radius: 5px;
-    margin: 0px 0px 15px  ;
+    color: #585858;
+    outline: none;
+}
+
+input#nome:focus {
+    box-shadow: 0px 1px 3px rgb(119, 117, 117);
 }
 
 
-button {
-    position: relative;
-    margin: 2rem 0 0 0 ;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(70, 152, 240);
-    color: white;
-    border: none;
+#formulario-cadastro label#data-nascimento {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 10px 0;
 }
 
-button:hover {
+#formulario-cadastro input#data-nascimento {
+    width: 55%;
+    height: 25px;
+    border: 0.5px solid #b1aeae;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #585858;
+    outline: none;
+}
+
+input#data-nascimento:focus {
+    box-shadow: 0px 1px 3px rgb(119, 117, 117);
+}
+
+
+
+#formulario-cadastro label#sexo {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+#formulario-cadastro input#sexo {
+    padding-left: 10px;
+    margin: 10px 5px 10px 8px;
+}
+
+#formulario-cadastro label#email {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+#formulario-cadastro input#email {
+    width: 82%;
+    height: 25px;
+    border: 0.5px solid #b1aeae;
+    padding-left: 10px;
+    margin: 10px 10px 0 0;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #585858;
+    outline: none;
+}
+
+input#email:focus {
+    box-shadow: 0px 1px 3px rgb(119, 117, 117);
+}
+
+#formulario-cadastro label#senha {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+#formulario-cadastro input#senha {
+    width: 81.6%;
+    height: 25px;
+    border: 0.5px solid #b1aeae;
+    padding-left: 10px;
+    margin: 10px 10px 0 0;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #585858;
+    outline: none;
+}
+
+input#senha:focus {
+    box-shadow: 0px 1px 3px rgb(119, 117, 117);
+}
+
+/* Estilização BUTTON */
+
+#formulario-cadastro button#cadastrar {
+    color: #f8eeee;
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    margin: 20px 0 0 0;
     cursor: pointer;
-    background-color: rgb(42, 138, 241);
+    background-color: #f37676;
+    border-radius: 10px;
+    transition: 1s;
+    margin-bottom: 1rem;
+    border: 1px solid #5a5959;
 }
 
+#formulario-cadastro button#cadastrar:hover {
+        background-color: rgb(240, 105, 105);
+    }
+
+    

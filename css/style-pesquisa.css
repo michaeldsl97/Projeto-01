@@ -11,7 +11,8 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: rgb(214, 215, 216);
+    background: rgb(237,109,93);
+background: linear-gradient(0deg, rgba(237,109,93,1) 0%, rgba(244,166,65,0.6250875350140056) 95%);
 }
 
 /* Estilização CABEÇALHO */
