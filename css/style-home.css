@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    ;
+    
 }
 
 body {
@@ -88,11 +88,15 @@ section .foto {
     display: flex;
     width: 50%;
     height: 75vh;
-    background: url(https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) center center/cover;
+    background: url(https://images.pexels.com/photos/3361739/pexels-photo-3361739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: end;
     border-radius: 10px;
     border: 1px solid rgb(161, 161, 161);
 }
+
 
 section .detalhes-nome {
     font-size: 20px;
@@ -170,4 +174,12 @@ div.reacao-superlike i {
 
 div.reacao-like i {
     color: rgb(39, 233, 97);
+}
+
+/* Media Quarie foto de perfil*/
+@media screen and (max-width:480px) {
+    section .foto{
+        width: 95%;
+        height: 75vh;
+    }
 }

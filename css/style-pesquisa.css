@@ -5,14 +5,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    ;
 }
 
 body {
     width: 100%;
     height: 100%;
-    background: rgb(237,109,93);
-background: linear-gradient(0deg, rgba(237,109,93,1) 0%, rgba(244,166,65,0.6250875350140056) 95%);
+    background: linear-gradient(rgb(231, 231, 231), rgb(165, 167, 165));
 }
 
 /* Estilização CABEÇALHO */
@@ -42,7 +40,7 @@ section.pesquisa {
     margin: auto;
     width: 90%;
     align-items: center;
-    margin-bottom: 3rem;
+    margin: 2rem;
 }
 
 i.bi-search {
@@ -90,7 +88,10 @@ input:focus {
 .foto {
     width: 70vh;
     height: 70vh;
-    background: url(https://images.pexels.com/photos/3658120/pexels-photo-3658120.jpeg?auto=compress&cs=tinysrgb&w=600) left/cover;
+    background: url(https://images.pexels.com/photos/3658120/pexels-photo-3658120.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1mm ridge rgb(143, 141, 141);
     border-radius: 10px;
     display: flex;
@@ -154,15 +155,21 @@ input:focus {
     font-size: 2rem;
     border: 0.5px solid rgba(0, 0, 0, .4);
     box-shadow: 1px 3   px 8px rgba(0, 0, 0.12);
+    transition: 0.5s;
+}
+
+div.reacao:hover {
+    font-size: 40px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
 }
 
 div.reacao-deslike i {
     color: red;
 }
 
-div.reacao-superlike {
-    margin: 0 3rem;
-}   
+
 
 div.reacao-superlike i {
     color: aqua;
